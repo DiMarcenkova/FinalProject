@@ -6,7 +6,7 @@ import models.ProductModel;
 import org.junit.Assert;
 import pages.*;
 
-public class CheckOutBillingPageStepDefs {
+public class CheckOutBillingPageSteps {
 
     private CheckOutBillingPage checkoutBillingPage = new CheckOutBillingPage();
 

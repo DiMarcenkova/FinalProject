@@ -26,9 +26,10 @@ public class CheckOutShippingPage {
     private By nextBtn = By.xpath("//button[@class='main-button upcase fr small-radius button-min-width checkout-shipping-continue-button']");
 
     public void selectDeliveryType(String deliveryType) {
+        sleep(500);
         SelenideElement deliveryTypesElement = $(deliveryMenu);
         ElementsCollection deliveryTypeCollection = deliveryTypesElement.$$(deliveryMenuChooseOptions);
-        assert deliveryTypeCollection.size() == 3 : "Delivery radio buttons was not found or was changet it count";
+        assert deliveryTypeCollection.size() == 3 : "Delivery radio buttons was not found or was changed it count";
         SelenideElement checkBox;
         switch (deliveryType) {
             case "address":

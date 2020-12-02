@@ -6,7 +6,7 @@ import models.ProductModel;
 import org.junit.Assert;
 import pages.*;
 
-public class ProductPageStepDefs {
+public class ProductPageSteps {
 
     private ProductPage productPage = new ProductPage();
 

@@ -27,7 +27,7 @@ public class ProductSearchPage {
         ElementsCollection productElementsCollection = productsElement.$$(newProductItem);
 
         assert productElementsCollection.size() != 0 : "productElementsCollection size is 0";
-        assert productElementsCollection.size() >= selectFromList : "productElementsCollection size is 0";
+        assert productElementsCollection.size() >= selectFromList : "No such element in list";
 
         SelenideElement selectedProduct = productElementsCollection.get(selectFromList - 1);
 

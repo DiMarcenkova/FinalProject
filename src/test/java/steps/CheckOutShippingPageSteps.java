@@ -8,7 +8,7 @@ import pages.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.sleep;
 
-public class CheckOutShippingPageStepDefs {
+public class CheckOutShippingPageSteps {
     private CheckOutShippingPage checkoutShippingPage = new CheckOutShippingPage();
     private CustomerModel customerModel = new CustomerModel();
 

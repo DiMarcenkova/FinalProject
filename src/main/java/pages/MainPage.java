@@ -13,12 +13,12 @@ public class MainPage {
     private By mainSearchButton = By.className("main-search-submit");
 
     public void setUpSelenide() {
-        Configuration.baseUrl = "https://www.1a.lv/";
         Configuration.holdBrowserOpen = true;
         Configuration.startMaximized = true;
     }
 
-    public void openHomepage() {
+    public void openHomepage(String homePageAddress) {
+        Configuration.baseUrl = homePageAddress;
         open("");
     }
 
